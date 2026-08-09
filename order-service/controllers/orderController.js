@@ -2,9 +2,8 @@ const { v4: uuidv4 } = require('uuid');
 const axios = require('axios');
 const pool = require('../db');
 
-const USER_SERVICE_URL = process.env.USER_SERVICE_URL || 'http://localhost:3001';
-const PRODUCT_SERVICE_URL = process.env.PRODUCT_SERVICE_URL || 'http://localhost:3002';
-
+const USER_SERVICE_URL = process.env.USER_SERVICE_URL || 'http://user-service:3001';
+const PRODUCT_SERVICE_URL = process.env.PRODUCT_SERVICE_URL || 'http://product-service:3002';
 exports.createOrder = async (req, res) => {
   const client = await pool.connect();
   
