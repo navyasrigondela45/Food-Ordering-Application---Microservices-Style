@@ -87,7 +87,6 @@ Complete communication model:
 Port: 3001
 Role: Service Connect Server
 ```
-
 Responsible for:
 
 - User registration
